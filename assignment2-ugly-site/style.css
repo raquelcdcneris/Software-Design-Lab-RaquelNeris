@@ -1,12 +1,36 @@
 body {
-    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+
+h1 {
+    color: burlywood;
+    font-size: 70px;
   }
   
-  h1 {
+p {
     color: black;
-    font-family: Helvetica, Helvetica, sans-serif;
+    font-size: 30px;
   }
-  #justthispara {
-    background-color:rgb(17, 244, 236)
+
+.flex-container {
+    margin: 80px auto 0 auto;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    
   }
   
+.flex-container > div {
+    margin: 40px auto 0 auto;
+    color: rgb(53, 47, 47);
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px; 
+  }
+
+
+
