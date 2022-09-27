@@ -1,7 +1,28 @@
+/* Style the top navigation bar */
+.topnav {
+  border-bottom: gray;
+  border-top: black;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  text-align: right;
+  padding: 14px 16px;
+  color:black;
+}
+
+/* Underline on hover */
+.topnav a:hover {
+  color: red; 
+  text-decoration-line: underline;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background-image: url("https://media0.giphy.com/media/xThuWcaa4U4XZQDgvm/giphy.gif?cid=ecf05e471w8ei1vgmgjqpgj0t8q73fhln94tv31hsh376m5r&rid=giphy.gif&ct=g");
+
   }
 
 h1 {
@@ -10,26 +31,8 @@ h1 {
   }
   
 p {
-    color: black;
+    color: rgb(54, 45, 45);
     font-size: 20px;
-  }
-
-.flex-container {
-    margin: 80px auto 0 auto;
-    margin-top: 0;
-    display: flex;
-    justify-content: center;
-    
-  }
-  
-.flex-container > div {
-    margin: 40px auto 0 auto;
-    color: rgb(53, 47, 47);
-    width: 200px;
-    margin: 20px;
-    text-align: center;
-    line-height: 30px;
-    font-size: 20px; 
   }
 
 
