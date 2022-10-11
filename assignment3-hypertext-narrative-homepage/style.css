@@ -52,9 +52,18 @@ p {
   align-items: center;
 }
 
+.section3 {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
 .flex-container {
   display: flex;
-  height: 700px;
+  height: 350px;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
@@ -65,8 +74,8 @@ p {
 
 .box {
   display: flex;
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
   background-color: rgb(30, 30, 30);
   color: white;
   border-radius: 5px;
@@ -76,6 +85,7 @@ p {
 }
 
 .boxcontent {
+  height: 80%;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -114,5 +124,18 @@ p {
 
 button:hover {
   opacity: 0.8;
+}
+
+.lower-row {
+  height: 30%;
+  width: 100%;
+  background-color: rgb(30, 30, 30);
+  display: flex;
+
+}
+
+.btn {
+  padding: 10px;
+  margin: 10px;
 }
 
