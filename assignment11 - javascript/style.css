@@ -18,6 +18,7 @@ p {
     margin-top: 0;
     display: flex;
     justify-content: center;
+    cursor:pointer;
     
   }
   
@@ -29,6 +30,7 @@ p {
     text-align: center;
     line-height: 30px;
     font-size: 20px; 
+    cursor:pointer;
   }
 
 
