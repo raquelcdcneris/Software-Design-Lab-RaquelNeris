@@ -1,21 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+body {
+  cursor: pointer;
+  text-align:center;
+  background-color: black;
+
+}
+
 h1 {
-  color:rgb(131, 125, 137);
-  font: size 50px;
+  color:rgb(255,255,255);
+  font-size: 50px;
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+  animation-name: fadeIn ease 10s;
+
+}
+
+h2 {
+  color:rgb(255,255,255);
+  font-size: 16px;
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+  animation-name: fadeIn ease 10s;
+
+}
+
+h3 {
+  color:rgb(243, 193, 11);
+  font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  
-  }
-  
-  body {
-    cursor: pointer;
-  }
-  
-  .transbox {
-    background-color: rgba(255, 255, 255, 0.4);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    padding: 20px;
-    margin: 30px;
-    font-weight: bold;
-  }
-  
+  animation-name: fadeIn ease 10s;
+
+}
+
+h4 {
+  color:rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+  animation-name: fadeIn ease 10s;
+
+}
+
+
+p {
+  color:rgb(255, 255, 255);
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  animation-name: fadeIn ease 10s;
+
+}
+
+.transbox {
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 60px;
+  margin: 10%;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 20px;
+
+}
+
+
+
+.button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  font-family: 'Rock Salt', cursive;
+  margin: 10px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+
+}
+
+.button:hover {
+  background-color:  white;
+  box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
+  color: black;
+  transform: translateY(-7px);
+}
+
+/* Popup container*/
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 400px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 30px 100px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -180px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
