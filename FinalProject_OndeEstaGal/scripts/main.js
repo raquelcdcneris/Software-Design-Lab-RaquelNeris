@@ -3,8 +3,7 @@ function myFunction() {
   popup.classList.toggle("show");
 }
 
-document.querySelector("#1_DivinoMaravilhoso_GAL.svg").onclick = function(e) {
+document.getElementById('play').addEventListener('click', function (e) {
   e.preventDefault();
-  const audio = new Audio("assets/tunes/DivinoMaravilhoso.mp3");
-  audio.play();
-}
+  document.getElementById('audio').play();
+});
